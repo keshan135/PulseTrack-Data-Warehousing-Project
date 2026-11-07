@@ -77,6 +77,8 @@ Python and PostgreSQL hooks are used to manage ingestion workflows.
 -Fact and dimension modeling.<br>
 -Business intelligence dashboards using Power BI.<br>
 
+Developed as a hands-on Data Engineering project to explore modern data engineering technologies and build practical experience in designing end-to-end data pipelines.
+
 
 
 
