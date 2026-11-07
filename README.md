@@ -28,10 +28,46 @@ Power BI          ->                Data visualization and analytics
 
 Git & GitHub         ->             Version control
 
-## Airflow DAG Graph
-![postgres_ingest](postgres_ingest_dag.png) ![mongodb_ingest](mongodb_ingest.png) ![dbt_airflow](dbt_airflow.png)
+## Data Pipeline
 
-## dbt Lineage Graph
+## 1. Data Ingestion
+
+Apache Airflow orchestrates data extraction from:
+
+-> PostgreSQL OLTP database
+-> MongoDB database
+
+![postgres_ingest](postgres_ingest_dag.png)
+![mongodb_ingest](mongodb_ingest.png)
+
+Python and PostgreSQL hooks are used to manage ingestion workflows.
+
+## 2. Bronze Layer
+
+Raw ingested data is stored in PostgreSQL data warehouse schemas.
+The Bronze layer preserves source data for downstream processing.
+ ![dbt_airflow](dbt_airflow.png)
+
+## 3. Data Transformation
+
+dbt is used to transform and organize the ingested data into:
+Silver Layer – cleaned and transformed data.
+Gold Layer – analytical fact and dimension models.
+
+dbt Lineage Graph
 ![dbt_dag](dbt-dag.png)
+
+## 4. Data Visualization
+
+Power BI is used to create dashboards and visualize analytical data from the Gold layer.
+Workflow Orchestration
+
+The Airflow DAGs manage the ingestion and transformation workflows.
+
+Python and PostgreSQL hooks are used to manage ingestion workflows.
+
+
+
+
 
 
