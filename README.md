@@ -34,7 +34,7 @@ Git & GitHub         ->             Version control
 
 Apache Airflow orchestrates data extraction from:
 
--> PostgreSQL OLTP database
+-> PostgreSQL OLTP database.<br>
 -> MongoDB database
 
 ![postgres_ingest](postgres_ingest_dag.png)
