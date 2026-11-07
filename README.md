@@ -1,11 +1,12 @@
 ## PulseTrack – End-to-End Data Engineering Project
 
-## About PulseTrack
-
-PulseTrack is a digital advertising analytics platform that helps businesses monitor and analyze advertising campaigns, track impressions, clicks, conversions, and revenue, and gain valuable insights into campaign performance.
 An end-to-end data engineering and analytics platform built using Apache Airflow, PostgreSQL, MongoDB, dbt, and Power BI.
 
 PulseTrack integrates data from multiple sources, orchestrates automated data ingestion, applies data transformations using a Medallion Architecture, and delivers analytical insights through Power BI dashboards.
+
+## About PulseTrack
+
+PulseTrack is a digital advertising analytics platform that helps businesses monitor and analyze advertising campaigns, track impressions, clicks, conversions, and revenue, and gain valuable insights into campaign performance.
 
 ## Project Overview
 
