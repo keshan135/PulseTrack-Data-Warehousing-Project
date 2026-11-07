@@ -44,7 +44,7 @@ Python and PostgreSQL hooks are used to manage ingestion workflows.
 
 ## 2. Bronze Layer
 
-Raw ingested data is stored in PostgreSQL data warehouse schemas.
+Raw ingested data is stored in PostgreSQL data warehouse schemas.<br>
 The Bronze layer preserves source data for downstream processing.
  ![dbt_airflow](dbt_airflow.png)
 
