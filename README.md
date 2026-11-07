@@ -46,26 +46,36 @@ Python and PostgreSQL hooks are used to manage ingestion workflows.
 
 Raw ingested data is stored in PostgreSQL data warehouse schemas.<br>
 The Bronze layer preserves source data for downstream processing.
- ![dbt_airflow](dbt_airflow.png)
 
 ## 3. Data Transformation
 
-dbt is used to transform and organize the ingested data into:
-Silver Layer – cleaned and transformed data.
-Gold Layer – analytical fact and dimension models.
+dbt is used to transform and organize the ingested data into:<br>
+Silver Layer – cleaned and transformed data.<br>
+Gold Layer – analytical fact and dimension models.<br>
 
 dbt Lineage Graph
 ![dbt_dag](dbt-dag.png)
 
 ## 4. Data Visualization
 
-Power BI is used to create dashboards and visualize analytical data from the Gold layer.
-Workflow Orchestration
+Power BI is used to create dashboards and visualize analytical data from the Gold layer.<br>
+![dbt_dag](dashboard.png)
 
-The Airflow DAGs manage the ingestion and transformation workflows.
+## Workflow Orchestration
 
+The Airflow DAGs manage the ingestion and transformation workflows.<br>
 Python and PostgreSQL hooks are used to manage ingestion workflows.
+ ![dbt_airflow](dbt_airflow.png)
 
+## Key Features
+
+-Multi-source data ingestion.<br>
+-PostgreSQL and MongoDB integration.<br>
+-Workflow orchestration using Apache Airflow.<br>
+-Medallion Architecture implementation.<br>
+-Data transformation using dbt.<br>
+-Fact and dimension modeling.<br>
+-Business intelligence dashboards using Power BI.<br>
 
 
 
