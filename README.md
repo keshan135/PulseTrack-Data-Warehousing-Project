@@ -31,7 +31,7 @@ Power BI                          Data visualization and analytics
 Git & GitHub                      Version control
 
 Airflow DAG Graph
-![postgres_ingest](postgres_ingest.png) ![mongodb_ingest](mongodb_ingest.png) ![dbt_airflow](dbt_airflow.png)
+![postgres_ingest](postgres_ingest_dag.png) ![mongodb_ingest](mongodb_ingest.png) ![dbt_airflow](dbt_airflow.png)
 
 dbt Lineage Graph
 ![dbt_dag](dbt-dag.png)
