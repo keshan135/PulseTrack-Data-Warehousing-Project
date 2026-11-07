@@ -1,5 +1,8 @@
 ## PulseTrack – End-to-End Data Engineering Project
 
+## About PulseTrack
+
+PulseTrack is a digital advertising analytics platform that helps businesses monitor and analyze advertising campaigns, track impressions, clicks, conversions, and revenue, and gain valuable insights into campaign performance.
 An end-to-end data engineering and analytics platform built using Apache Airflow, PostgreSQL, MongoDB, dbt, and Power BI.
 
 PulseTrack integrates data from multiple sources, orchestrates automated data ingestion, applies data transformations using a Medallion Architecture, and delivers analytical insights through Power BI dashboards.
@@ -54,17 +57,20 @@ Silver Layer – cleaned and transformed data.<br>
 Gold Layer – analytical fact and dimension models.<br>
 
 dbt Lineage Graph
+
 ![dbt_dag](dbt-dag.png)
 
 ## 4. Data Visualization
 
 Power BI is used to create dashboards and visualize analytical data from the Gold layer.<br>
+
 ![dbt_dag](dashboard.png)
 
 ## Workflow Orchestration
 
 The Airflow DAGs manage the ingestion and transformation workflows.<br>
 Python and PostgreSQL hooks are used to manage ingestion workflows.
+
  ![dbt_airflow](dbt_airflow.png)
 
 ## Key Features
