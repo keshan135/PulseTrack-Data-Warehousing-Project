@@ -8,30 +8,7 @@ Project Overview
 
 The project demonstrates a modern data engineering workflow, covering data ingestion, data warehousing, transformation, orchestration, and business intelligence.
 
-Architecture
 
-
- PostgreSQL OLTP                   MongoDB 
-     |                               │
-     |_________ Apache Airflow ______|
-                       |
-                       v
-              PostgreSQL Data Warehouse
-                       |
-                       v
-                  Bronze Layer
-                       |
-                       v
-                  dbt Transformations
-                       |
-                       v
-                  Silver Layer
-                       |
-                       v
-                   Gold Layer
-                       |
-                       v
-                   Power BI
 
 Technologies Used
 
@@ -57,6 +34,6 @@ Airflow DAG Graph
 ![postgres_ingest](postgres_ingest.png) ![mongodb_ingest](mongodb_ingest.png) ![dbt_airflow](dbt_airflow.png)
 
 dbt Lineage Graph
-![dbt_dag](dbt_dag.png)
+![dbt_dag](dbt-dag.png)
 
 
